@@ -1,1 +1,0 @@
-import"./chunk-K5T4RW27-BxqIBCIH.js";import{n as e}from"./chunk-FOC6F5B3-Djrxez6k.js";export{e as createPacketServices};
