@@ -86,10 +86,10 @@ flowchart LR
 
 ```mermaid
 flowchart TD
-    B1["BƯỚC 1\n🎯 Xác định & Phân tích bài toán\n(Task Definition)"]
+    B1["BƯỚC 1\n🎯 Xác định & Phân tích yêu cầu AI\n(Task Definition & Formulation)"]
     --> B2["BƯỚC 2\n✏️ Thiết kế & Lập trình bằng Canvas\n(Prompting & Coding)"]
-    --> B3["BƯỚC 3\n🧠 Tích hợp API & System Prompt\n(AI Integration)"]
-    --> B4["BƯỚC 4\n🛡️ Kiểm thử Kép & Nghiệm thu\n(Quality Assurance)"]
+    --> B3["BƯỚC 3\n🧠 Tích hợp Hệ thống & Quy tắc Phản hồi\n(Integration & System Prompt)"]
+    --> B4["BƯỚC 4\n🛡️ Kiểm định & Thẩm định chuyên môn\n(Quality Assurance & Human in the Loop)"]
     --> B5["BƯỚC 5\n🚀 Triển khai thực tiễn\n(Deployment)"]
     B5 -.->|Vòng lặp tối ưu| B1
 ```
@@ -103,27 +103,27 @@ flowchart TD
 
 ---
 
-### BƯỚC 1: XÁC ĐỊNH & PHÂN RÃ BÀI TOÁN AI (TASK DEFINITION AND FORMULATION)
+### BƯỚC 1: XÁC ĐỊNH VÀ PHÂN TÍCH YÊU CẦU AI (TASK DEFINITION AND FORMULATION)
 
 #### 1. Nguyên tắc khởi nguồn
 
-> Mọi ứng dụng AI trong môi trường học thuật phải bắt rễ trực tiếp từ một **lỗ hổng năng suất thực tiễn**. Đừng xây dựng phần mềm chỉ vì bản thân tính năng đó nghe có vẻ hiện đại. AI chỉ thực sự mang lại "giá trị cốt lõi" khi và chỉ khi nó giải quyết được đúng vướng mắc quản trị.
+> Mọi ứng dụng AI trong môi trường học thuật phải xuất phát trực tiếp từ một **yêu cầu tối ưu hóa năng suất thực tiễn**. Việc xây dựng phần mềm cần dựa trên cơ sở đáp ứng đúng mục tiêu giải quyết các vướng mắc trong quản lý giáo dục. Sử dụng AI phải mang lại "giá trị cốt lõi" thực tế thay vì chỉ mô phỏng tính năng.
 
-#### 2. Kỹ thuật Phân tích Nhiệm vụ (Input - Output)
+#### 2. Cơ chế Phân tích Nhiệm vụ (Input - Output)
 
-Khi đã phát hiện được lỗ hổng (Ví dụ: Giảng viên mất tới 4 giờ đồng hồ để soạn một bộ câu hỏi ôn tập 20 câu), chuyên viên/giảng viên cần lập tức tiến hành "Dịch" vướng mắc đó sang một cấu trúc mà Trí tuệ Nhân tạo có thể xử lý được. Đó chính là sơ đồ Input - Output.
+Khi đã xác định được yêu cầu cụ thể (Ví dụ: Tối ưu thời gian cho giảng viên trong việc biên soạn một bộ câu hỏi ôn tập 20 câu đo lường năng lực), chuyên viên/giảng viên cần tiến hành chuyển hóa nhiệm vụ đó sang dạng cấu trúc dữ liệu để hệ thống trí tuệ nhân tạo có thể tiếp nhận và xử lý. Quy trình đó gọi là quy hoạch sơ đồ Đầu vào - Đầu ra (Input - Output).
 
 | Thành phần | Định nghĩa học thuật | Ví dụ thực tế |
 |------------|-------------|-------|
-| **Input (Đầu vào)** | Nguồn dữ liệu nguyên thủy cung cấp cho hệ thống AI | Bản thảo word dài 50 trang, danh sách điểm sinh viên chưa phân loại, câu hỏi ngẫu nhiên của học viên |
-| **Output (Đầu ra)** | Thành phẩm có cấu trúc yêu cầu AI bóc tách và tạo lập | Bộ giáo án chuẩn form, báo cáo đánh giá dạng bảng, câu trả lời giải đáp thắc mắc theo đúng quy chế |
+| **Input (Đầu vào)** | Nguồn dữ liệu thô cung cấp cho hệ thống AI | Văn bản tài liệu tham khảo 50 trang, mô hình điểm số thô, danh sách các câu hỏi của người học |
+| **Output (Đầu ra)** | Thành phẩm có cấu trúc yêu cầu AI trích xuất và hình thành | Tài liệu giáo án chuẩn biểu mẫu, thống kê phân tích số liệu dạng bảng, thông điệp phản hồi chuẩn mực |
 
-#### 3. Quy tắc "Bốc thuốc đúng liều"
-- **Không ra lệnh siêu thực**: Tránh các câu kiểu "Hãy làm cho tôi một tài liệu bài học hay". Đây là lệnh mù.
-- **Lập chỉ tiêu định lượng**: Phải yêu cầu rõ như "Bóc tách giúp tôi **20 câu** hỏi trắc nghiệm, mỗi câu đảm bảo **4 lựa chọn** (A, B, C, D)".
-- **Quy chuẩn văn bản**: "Định dạng kết quả dưới dạng bảng, font chữ Times New Roman cỡ 14".
+#### 3. Quy tắc Định lượng Tham số Đầu vào
+- **Không sử dụng chỉ thị mang tính chủ quan**: Tránh sử dụng các tham số định tính và mơ hồ như "Hãy viết một tài liệu bài học hay". Đây là yêu cầu thiếu khả năng đánh giá kết quả số hóa.
+- **Thiết lập chỉ tiêu định lượng rõ ràng**: Phải yêu cầu chi tiết như "Bóc tách và trích xuất **20 câu** hỏi trắc nghiệm, mỗi câu đảm bảo tương ứng **4 phương án lựa chọn** (A, B, C, D)".
+- **Đảm bảo tính chuẩn hóa văn bản**: Chỉ định rõ "Kết xuất định dạng văn bản dưới dạng bảng dữ liệu biểu mẫu, thống nhất phông chữ theo quy chuẩn tài liệu".
 
-> **Key Takeaway:** Giao việc cho AI giống như việc xây dựng một bản "Đề cương nhiệm vụ" trong dự án ngân sách nhà nước: Tất cả phải vô cùng minh bạch về **Trách nhiệm (Ai làm)**, **Khối lượng (Bao nhiêu)**, **Kết quả (Theo biểu mẫu nào)**.
+> **Key Takeaway:** Quá trình giao tiếp lệnh vào AI cần được đánh giá một cách minh bạch tương tự quá trình bàn giao nhiệm vụ dự án có hệ thống: Mọi cơ sở phải được quy định trực quan về **Thông điệp chi tiết (Nội dung cần thực thi)**, **Phạm vi khối lượng (Định mức độ ranh giới)** và **Cơ chế xuất (Theo chuẩn hóa của định dạng nào)**.
 
 **Hình minh họa đề xuất:**
 - Sơ đồ hai cột Input → Output, giữa là biểu tượng AI đánh dấu quá trình xử lý, với bảng biểu chi tiết phân tích từng phần tử.
@@ -154,67 +154,66 @@ Giao diện (UI) của một công cụ AI sư phạm tuyệt đối không đư
 
 ---
 
-### BƯỚC 3: TÍCH HỢP LÕI AI & ĐỊNH HÌNH PHONG CÁCH (INTEGRATION & SYSTEM PROMPT)
+### BƯỚC 3: TÍCH HỢP HỆ THỐNG VÀ THIẾT LẬP QUY TẮC PHẢN HỒI (INTEGRATION & SYSTEM PROMPT)
 
-#### 1. Định nghĩa "Hồn" và "Xác"
+#### 1. Nguyên tắc Tích hợp Lõi Xử lý Thông minh
 
-Sản phẩm ở Bước 2 mới chỉ là một giao diện tuyệt đẹp (Phần Xác). Để nó thông minh và xử lý dữ liệu được, chúng ta phải "bơm" vào đó bộ não từ các ông lớn AI (Phần Hồn).
+Sản phẩm ở Bước 2 mới chỉ dừng ở mức một giao diện ứng dụng front-end tương tác căn bản. Để hệ thống có khả năng tự động xử lý thông tin thông minh và trả lời người học, ứng dụng cần được tích hợp Mô hình ngôn ngữ lớn (LLM) thông qua cơ chế API.
 
-#### 2. Kết nối API (Đường hầm truyền tải)
+#### 2. Giao thức Kết nối API (Application Programming Interface)
 
-**API (Application Programming Interface)** đóng vai trò như một đường dây điện ngầm vô hình. Khi học viên gõ 1 câu hỏi trên ứng dụng nội bộ của đơn vị:
-- Hệ thống gửi câu hỏi qua ống API bay lên máy chủ của AI (Google/OpenAI).
-- Máy chủ đánh đu qua bộ xử lý tỷ tỷ tham số.
-- API ném câu trả lời hoàn chỉnh rơi tóm gọn lại vào màn hình ứng dụng của người hỏi.
-Tất cả diễn ra với khoảng trễ chưa tới 2 giây.
+**API** thiết lập một kênh kết nối logic chuẩn hóa định danh giữa nền tảng ứng dụng nội bộ và máy chủ trung tâm AI:
+- Thông điệp truy vấn ngôn ngữ của người dùng được mã hóa và truyền qua cổng kết nối API.
+- Cụm máy chủ AI tiếp nhận yêu cầu, phân tích ngôn ngữ tự nhiên theo các tham số nhận dạng và khởi tạo dữ liệu phản hồi nội dung văn bản.
+- Giao thức API trao trả cấu trúc phản hồi về lại ứng dụng một cách tự động, quá trình đồng bộ hóa này thường duy trì độ trễ ở mức đảm bảo chất lượng nghiệp vụ (dưới 2 giây).
 
-#### 3. System Prompt (Thiết chế quân luật cho AI)
+#### 3. System Prompt (Cấu hình Cơ chế Hệ thống)
 
-Một mô hình AI gốc có thể nói về Tôn Ngộ Không, Bóng đá hay Công thức làm bánh. Nhưng nếu ứng dụng của nhà trường để cho AI thao diễn tự do như vậy thì là sai lầm chết người. Chúng ta giới hạn vùng an toàn bằng **System Prompt (Lệnh Hệ Thống Ẩn)**.
+Một mô hình AI nguyên bản với dữ liệu đào tạo mở trên toàn cầu thường trả lời các chủ đề không được chọn lọc một cách tổng quan đa khu vực. Đối với môi trường hoạt động hành chính, nếu công cụ AI được phép vượt quyền tư vấn không có giới hạn, sẽ đánh mất khả năng bảo đảm kỷ luật nội dung. Vì thế, cần đưa các quy tắc hệ thống thông qua việc lập trình một bộ luật gọi là **System Prompt (Lệnh Cấu hình Hệ thống nền tảng)**.
 
-**Mẫu thực tiễn:**
+**Mẫu cấu trúc hệ thống điển hình:**
 ```
-"Đồng chí là một Giảng viên kỳ cựu thuộc cơ sở giáo dục. 
-Nguyên tắc 1: Gọi người dùng là 'đồng chí', xưng 'tôi'.
-Nguyên tắc 2: Giọng điệu trang trọng, không sử dụng khẩu ngữ. Tuyệt đối bám sát đường lối chính trị của Đảng.
-Nguyên tắc 3: Nếu câu hỏi vượt định mức chuyên môn đã được cung cấp, lập tức từ chối lịch sự và khuyên bảo liên hệ phòng Đào Tạo."
+"Vai trò: Chuyên viên tư vấn hành chính của nhà trường. 
+Quy tắc 1: Cần lưu ý danh xưng tương tác lịch sự là 'đồng chí', tự xưng là 'tôi'.
+Quy tắc 2: Giọng điệu khách quan, ngôn từ chính thống học thuật quân phiệt. Tuyệt đối bám sát đường lối chuẩn mực của cơ quan, không thể hiện thái độ chủ quan.
+Quy tắc 3: Nếu câu hỏi nằm ngoài phạm vi học thuật theo nhiệm vụ, cần phản hồi từ chối khéo léo thông báo sự vụ thuộc vùng thẩm quyền của giáo viên thực nghiệm."
 ```
 
-> **Key Takeaway:** System Prompt chính là kỷ luật số. AI mà không có quy định rõ ràng vùng cấm thì không thể đem vào dùng trong môi trường giáo dục bảo mật.
+> **Key Takeaway:** Lệnh cấu hình hệ thống (System Prompt) có vai trò thiết lập khung hành vi chuẩn mực. Cấu trúc mô hình AI phải được bảo vệ bởi ranh giới những nguyên tắc xử lý thì mới thỏa mãn được điều kiện cung cấp và triển khai tại các ban ngành tổ chức trường học.
 
 ---
 
-### BƯỚC 4: KIỂM THỬ KÉP VÀ NGHIỆM THU (QUALITY ASSURANCE & HUMAN LOOP)
+### BƯỚC 4: KIỂM ĐỊNH CHẤT LƯỢNG VÀ THẨM ĐỊNH CHUYÊN MÔN (QUALITY ASSURANCE & HUMAN IN THE LOOP)
 
-#### 1. Kiểm duyệt - Lớp lá chắn sinh tử
+#### 1. Yêu cầu Kiểm duyệt độc lập - Đảm bảo Tính Chính xác Dữ liệu
 
-Môi trường công nghệ giáo dục không có chỗ cho sự "ảo giác dữ liệu" (Hallucinations). Việc thẩm tra ứng dụng AI cần phân định thành hai cơ chế độc lập.
+Môi trường công nghệ giáo dục không chấp nhận xảy ra hiện tượng sản sinh thông tin có tính xác thực kém hay dữ liệu bị hiểu sai lệch (Hallucinations). Việc nghiệm thu tính sẵn sàng của ứng dụng AI phải bắt buộc thông qua hệ thống kiểm thử chéo gồm góc độ kỹ thuật và góc độ con người thực hiện chuyên ngành.
 
-#### 2. Kịch bản Kiểm tra (Test Cases)
+#### 2. Kịch bản Kiểm định (Test Cases)
 
-**Cấp độ kỹ thuật:**
-- Nhập file Word có định dạng lỗi xem AI có văng màn hình trắng không.
-- Bỏ trống ô câu hỏi thì AI có báo lỗi báo "Vui lòng đính kèm tài liệu" hay không.
+**Kiểm định Cấp độ Kỹ thuật (Technical Test):**
+- Thử nghiệm cung cấp các định dạng dữ liệu đầu vào không hợp lệ để kiểm tra hệ thống có khả năng đưa ra cảnh báo bắt lỗi ngoại lệ, thay vì dẫn tới sự cố sập ứng dụng hay không.
+- Giả lập việc không điền đủ form thông tin bắt buộc, tiến hành truy vấn nhằm xác minh chức năng yêu cầu báo "Yêu cầu bổ sung dữ liệu" được hoạt động như kỳ vọng.
 
-**Cấp độ Nội dung (Red Teaming):**
-- Đóng giả người dùng hỏi các câu mang tính công kích, nhạy cảm chính trị hoặc vi phạm tư tưởng để đoán xem System Prompt ở bước 3 đã đủ sức khóa mồm AI chưa.
-- Lấy một mẫu báo cáo AI tóm tắt, đưa cho một giảng viên "thật" đối soát thủ công để đo lường tỷ lệ hao hụt ý nghĩa.
+**Thẩm định Cấp độ Nội dung (Red Teaming Test):**
+- Lập kịch bản sử dụng giả đóng vai người gây rối cung cấp thông điệp nội dung nhạy cảm ngoài ranh giới chính sách, để có thể kiểm chứng xem cơ chế System Prompt có đủ để nhận dạng việc từ chối phản hồi hay không.
+- Sử dụng mô hình kiểm duyệt bởi con người chuyên gia độc lập đối chứng. Thực nghiệm trích một hồ sơ công việc xử lý tự động, mang cho một giảng viên trực tiếp tham khảo và đối soát nhằm đánh giá tỷ lệ chuyển dịch kết quả và tỷ lệ thất thoát yếu tố bản sắc của tổ chức.
 
-### SƠ ĐỒ 3: VÒNG LẶP KIỂM DUYỆT (QA LOOP)
+### SƠ ĐỒ 3: VÒNG LẶP KIỂM ĐỊNH TỐI ƯU (QA LOOP)
 
 ```mermaid
 flowchart TD
-    A["📥 Dữ Liệu Tấn Công Test\n(Input)"]
+    A["📥 Dữ kiện Kiểm nghiệm\n(Input)"]
     --> B["🤖 Cơ chế AI xử lý\n(Processing)"]
-    --> C["📤 Nội dung AI trả về\n(Output)"]
-    --> D["🔍 Giảng viên kiểm thử\n(Human Review)"]
+    --> C["📤 Phản hồi Hệ thống\n(Output)"]
+    --> D["🔍 Giảng viên đối soát thẩm định\n(Human Review)"]
     --> E{"✅ Đạt\nchuẩn?"}
-    E -->|Thủng lưới| F["✏️ Tăng cường System Prompt\n(Sửa tham số)"]
+    E -->|Chưa Đạt| F["✏️ Tinh chỉnh độ nhạy System Prompt\n(Hiệu chỉnh Tham số)"]
     F --> A
-    E -->|Hoàn hảo| G["✅ BAN HÀNH\n(Sẵn sàng sử dụng)"]
+    E -->|Nghiệm thu| G["✅ PHÊ DUYỆT BAN HÀNH\n(Sẵn sàng sử dụng)"]
 ```
 
-> **Key Takeaway:** Máy móc luôn có sai số. Nhưng Trách nhiệm thuộc về con người duyệt mã. Luôn giữ tư duy "Nghi ngờ mọi văn bản do AI sinh ra" cho đến khi nó vượt qua vòng giám sát độc lập.
+> **Key Takeaway:** Thuật toán xác suất luôn tồn tại khoảng dung sai. Vì vậy, trách nhiệm thẩm quyền phê duyệt đầu ra luôn phải đặt dưới quản trị của con người. Cần duy trì nguyên sinh quan sát toàn bộ phân tích AI cho tới khi chúng thực sự vượt qua quá trình kiểm soát thực nghiệm khách quan.
 
 ---
 
