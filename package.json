@@ -41,5 +41,21 @@
     "globals": "^17.4.0",
     "vite": "^8.0.1",
     "wait-on": "^9.0.4"
+  },
+  "build": {
+    "appId": "com.ai.educator.elearning",
+    "productName": "AI E-Learning",
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "dist/**/*",
+      "electron/**/*",
+      "package.json"
+    ],
+    "win": {
+      "target": "zip",
+      "icon": "public/icon.png"
+    }
   }
 }

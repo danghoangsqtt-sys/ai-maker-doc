@@ -32,16 +32,17 @@ Giáo trình được xây dựng dưới dạng **ứng dụng web đơn trang 
 
 ---
 
-## 📥 Tải Xuống Ứng Dụng (Bản Đóng Gói .EXE)
+## 📥 Tải Xuống Ứng Dụng (Bản Portable .ZIP)
 
-Tài liệu giáo trình đã được biên dịch và đóng gói hoàn chỉnh thành một phần mềm độc lập để giảng viên có thể tải về và chạy trực tiếp (**nhấn vào là chạy**) mà không cần cài đặt môi trường lập trình.
+Tài liệu giáo trình đã được biên dịch và đóng gói hoàn chỉnh thành một phần mềm độc lập.
+**Hướng dẫn:** Bạn tải file `.zip` cực nhẹ về, **giải nén** và nhấp đúp vào file `AI E-Learning.exe` (có biểu tượng bộ não sáng xanh) là thư viện điện tử sẽ lập tức mở ra mà không cần cài đặt!
 
 <p align="center">
-  <a href="https://gofile.io/d/NUnBMJ" target="_blank">
-    <img src="https://img.shields.io/badge/Tải_Xuống_Ngay-AI__Edu__Setup.exe (%7E127MB)-28a745?style=for-the-badge&logo=windows&logoColor=white" alt="Download EXE" />
+  <a href="https://gofile.io/d/V9e73r" target="_blank">
+    <img src="https://img.shields.io/badge/Tải_Xuống_Ngay-AI__Edu__Bản__Portable__.zip (%7E171MB)-28a745?style=for-the-badge&logo=windows&logoColor=white" alt="Download ZIP" />
   </a>
 </p>
-<p align="center"><em>*Phiên bản dành cho Windows 64-bit</em></p>
+<p align="center"><em>*Phiên bản dành cho Windows 64-bit (Cam kết siêu nhẹ siêu nhanh)</em></p>
 
 ---
 
