@@ -467,5 +467,59 @@ h1, h2, h3, h4 {
   :root {
     --toggle-left-open: 228px; /* 260px - 32px roughly */
   }
+
+  /* AIFlowchart_5_Steps Mobile Fixes */
+  .flowchart-5-container {
+    flex-direction: column !important;
+    gap: 32px;
+  }
+  .flowchart-5-step {
+    width: 100% !important;
+  }
+  .flowchart-5-line {
+    display: none !important;
+  }
+  .flowchart-5-feedback {
+    position: static !important;
+    margin-top: 16px;
+    height: auto !important;
+    width: 100% !important;
+  }
+  .flowchart-5-feedback-box {
+    border: none !important;
+    padding: 16px 0;
+  }
+  .feedback-arrow {
+    display: none !important;
+  }
+  .feedback-label {
+    position: static !important;
+    transform: none !important;
+    text-align: center;
+    white-space: normal !important;
+    width: 100%;
+    margin-top: 12px;
+  }
+
+  /* AIFlowchart (Zigzag) Mobile Fixes */
+  .flowchart-zig-item {
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+  .flowchart-zig-card {
+    width: 100% !important;
+    margin-bottom: 24px;
+  }
+  .flowchart-zig-center {
+    width: 100% !important;
+    margin-bottom: 24px;
+  }
+  .flowchart-zig-line {
+    display: none !important;
+  }
+  .flowchart-zig-empty {
+    display: none !important;
+  }
 }
+
 

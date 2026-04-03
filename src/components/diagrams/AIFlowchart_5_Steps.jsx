@@ -99,7 +99,7 @@ export default function AIFlowchart5Steps() {
         <div style={{ position: 'relative', width: '100%' }}>
           
           {/* Horizontal connector */}
-          <div style={{
+          <div className="flowchart-5-line" style={{
             position: 'absolute',
             top: '40px',
             left: '10%',
@@ -109,15 +109,15 @@ export default function AIFlowchart5Steps() {
             zIndex: 0
           }} />
 
-          <div style={{ display: 'flex', flexDirection: 'row', width: '100%', position: 'relative', zIndex: 1 }}>
-            {steps.map((step, index) => {
+          <div className="flowchart-5-container" style={{ display: 'flex', position: 'relative', zIndex: 1 }}>
+            {steps.map((step) => {
               const isHovered = hoveredStep === step.id;
               
               return (
                 <div 
                   key={step.id}
+                  className="flowchart-5-step"
                   style={{
-                    width: '20%',
                     padding: '0 12px',
                     display: 'flex',
                     flexDirection: 'column',
@@ -220,7 +220,7 @@ export default function AIFlowchart5Steps() {
           </div>
 
           {/* Feedback Loop */}
-          <div style={{
+          <div className="flowchart-5-feedback" style={{
             position: 'absolute',
             bottom: '-48px',
             left: '30%',
@@ -229,7 +229,7 @@ export default function AIFlowchart5Steps() {
             pointerEvents: 'none',
             zIndex: 0
           }}>
-            <div style={{
+            <div className="flowchart-5-feedback-box" style={{
               width: '100%',
               height: '100%',
               borderBottom: '3px dashed #fdba74',
@@ -239,7 +239,7 @@ export default function AIFlowchart5Steps() {
               position: 'relative'
             }}>
               {/* Arrow up */}
-              <div style={{
+              <div className="feedback-arrow" style={{
                 position: 'absolute',
                 top: '-8px',
                 left: '-10px',
@@ -248,7 +248,7 @@ export default function AIFlowchart5Steps() {
               }}>▲</div>
 
               {/* Label */}
-              <div style={{
+              <div className="feedback-label" style={{
                 position: 'absolute',
                 bottom: '-14px',
                 left: '50%',

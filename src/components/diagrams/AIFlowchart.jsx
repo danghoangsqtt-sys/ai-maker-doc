@@ -109,6 +109,7 @@ export default function SevenStepsFlow() {
           return (
             <div 
               key={step.id}
+              className="flowchart-zig-item"
               style={{
                 display: 'flex',
                 alignItems: 'center',
@@ -120,7 +121,9 @@ export default function SevenStepsFlow() {
               onMouseLeave={() => setHoveredStep(null)}
             >
               {/* Card */}
-              <div style={{
+              <div 
+                className="flowchart-zig-card"
+                style={{
                 width: 'calc(50% - 48px)',
                 background: '#fff',
                 borderRadius: '16px',
@@ -213,7 +216,9 @@ export default function SevenStepsFlow() {
               </div>
 
               {/* Center node */}
-              <div style={{
+              <div 
+                className="flowchart-zig-center"
+                style={{
                 width: '96px',
                 display: 'flex',
                 justifyContent: 'center',
@@ -223,7 +228,9 @@ export default function SevenStepsFlow() {
                 flexShrink: 0
               }}>
                 {/* Horizontal connector line */}
-                <div style={{
+                <div 
+                  className="flowchart-zig-line"
+                  style={{
                   position: 'absolute',
                   top: '50%',
                   [isLeft ? 'right' : 'left']: '48px',
@@ -256,7 +263,7 @@ export default function SevenStepsFlow() {
               </div>
 
               {/* Empty space on opposite side */}
-              <div style={{ width: 'calc(50% - 48px)' }} />
+              <div className="flowchart-zig-empty" style={{ width: 'calc(50% - 48px)' }} />
             </div>
           );
         })}
