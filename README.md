@@ -32,17 +32,16 @@ Giáo trình được xây dựng dưới dạng **ứng dụng web đơn trang 
 
 ---
 
-## 📥 Tải Xuống Ứng Dụng (Bản Portable .ZIP)
+## 🌐 Truy Cập Trực Tuyến (Trải Nghiệm Web App Tức Thì)
 
-Tài liệu giáo trình đã được biên dịch và đóng gói hoàn chỉnh thành một phần mềm độc lập.
-**Hướng dẫn:** Bạn tải file `.zip` cực nhẹ về, **giải nén** và nhấp đúp vào file `AI E-Learning.exe` (có biểu tượng bộ não sáng xanh) là thư viện điện tử sẽ lập tức mở ra mà không cần cài đặt!
+Tài liệu giáo trình đã được biên dịch và đưa lên mạng thành một Website độc lập, tương thích tuyệt đối với cả **Máy tính và Điện thoại di động**. Bạn không cần tải hay cài đặt bất cứ thứ gì!
 
 <p align="center">
-  <a href="https://gofile.io/d/tgtTOc" target="_blank">
-    <img src="https://img.shields.io/badge/Tải_Xuống_Ngay-AI__Edu__Bản__Portable__.zip (%7E171MB)-28a745?style=for-the-badge&logo=windows&logoColor=white" alt="Download ZIP" />
+  <a href="https://danghoangsqtt-sys.github.io/ai-maker-doc/" target="_blank">
+    <img src="https://img.shields.io/badge/Truy_Cập_Ngay-AI__Edu__Web__App-0284c7?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Truy cập Web App" />
   </a>
 </p>
-<p align="center"><em>*Phiên bản dành cho Windows 64-bit (Cam kết siêu nhẹ siêu nhanh)</em></p>
+<p align="center"><em>*Quét mã QR trong slide thuyết trình hoặc click thẳng vào link trên để xem bài giảng điện tử.</em></p>
 
 ---
 

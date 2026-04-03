@@ -38,7 +38,7 @@ const quizData = [
       "Đóng gói và triển khai"
     ],
     answer: 2,
-    explanation: "Công cụ AI chỉ phát huy tác dụng khi nó giải quyết được đúng một 'nỗi đau' thực tế trong công tác."
+    explanation: "Công cụ AI chỉ phát huy tác dụng khi nó giải quyết được đúng một 'vướng mắc' thực tế trong công tác."
   },
   {
     question: "Vì sao luôn phải có bước 'Kiểm duyệt và Ký duyệt' (Human in the loop)?",

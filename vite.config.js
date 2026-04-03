@@ -4,7 +4,7 @@ import react from '@vitejs/plugin-react'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: './', // Important for Electron to resolve paths locally
+  base: '/ai-maker-doc/', // For Github Pages deployment
   build: {
     outDir: 'dist',
   }

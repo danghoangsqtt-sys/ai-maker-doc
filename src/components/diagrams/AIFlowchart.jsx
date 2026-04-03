@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 const steps = [
   {
     id: 1,
-    title: 'Xác Định & Phân Rã',
+    title: 'Xác Định & Phân Tích',
     englishTitle: 'Task Definition',
     emoji: '🎯',
     color: '#3b82f6',
