@@ -348,3 +348,95 @@ h1, h2, h3, h4 {
   font-size: 1.2rem;
   font-weight: bold;
 }
+
+/* Mobile Responsiveness */
+@media (min-width: 769px) {
+  #main-wrapper.sidebar-open {
+    margin-left: 280px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  #main-wrapper {
+    margin-left: 0 !important;
+  }
+  
+  .content-body {
+    padding: 16px !important;
+  }
+  
+  .content-body > div {
+    padding: 20px !important;
+  }
+  
+  h1 {
+    font-size: 1.5rem !important;
+    line-height: 1.4 !important;
+  }
+  
+  .content-header h1 {
+    font-size: 1.4rem !important;
+  }
+  
+  /* Fix AI Comparison Table breaking out of view */
+  .ai-comparison-wrapper table {
+    display: block;
+    width: 100%;
+  }
+  
+  .ai-comparison-wrapper thead {
+    display: none;
+  }
+  
+  .ai-comparison-wrapper tbody, 
+  .ai-comparison-wrapper tr, 
+  .ai-comparison-wrapper td {
+    display: block;
+    width: 100%;
+    padding: 16px !important;
+  }
+  
+  .ai-comparison-wrapper td {
+    margin-bottom: 20px;
+    border: 1px solid var(--border-color);
+  }
+  
+  .ai-comparison-wrapper .before-cell {
+    border-radius: 12px 12px 0 0 !important;
+    border-bottom: none !important;
+  }
+  
+  .ai-comparison-wrapper .after-cell {
+    border-radius: 0 0 12px 12px !important;
+    border-top: none !important;
+  }
+  
+  /* Markdown Tables Responsive */
+  .markdown-body table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+  }
+  
+  /* Mermaid Viewer fix */
+  .chart-container {
+    padding: 10px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  /* Theme Banner fix */
+  .theme-banner {
+    padding: 16px !important;
+    flex-direction: column;
+    align-items: flex-start !important;
+    gap: 12px;
+  }
+  
+  /* Typography fine-tuning */
+  .markdown-body p, 
+  .markdown-body li {
+    font-size: 15px !important;
+    line-height: 1.6 !important;
+  }
+}

@@ -188,9 +188,11 @@ function App() {
         onToggle={() => setSidebarOpen(!sidebarOpen)}
         courseData={courseData}
       />
-      <div style={{ 
+      <div 
+        id="main-wrapper" 
+        className={sidebarOpen ? 'sidebar-open' : ''} 
+        style={{ 
         flex: 1, 
-        marginLeft: sidebarOpen ? '280px' : '0', 
         transition: 'margin-left 0.3s ease',
         overflow: 'hidden',
         display: 'flex'
