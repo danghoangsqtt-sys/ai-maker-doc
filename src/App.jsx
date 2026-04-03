@@ -120,7 +120,7 @@ function MainContent({ currentSection, data, isLoggedIn, onEdit, isEditing, onSa
                 {currentSection === 'dashboard' && (
                   <div style={{ marginTop: '40px' }}>
                     <div style={{ position: 'relative', width: '100%', height: '400px', borderRadius: '16px', overflow: 'hidden', boxShadow: '0 25px 50px rgba(0,0,0,0.15)' }}>
-                      <img src="/cover.png" alt="Cover" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                      <img src="./cover.png" alt="Cover" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                       <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, #0f172a, rgba(15,23,42,0.6), transparent)' }} />
                       <div style={{ position: 'absolute', bottom: 0, left: 0, padding: '32px', zIndex: 1 }}>
                         <div style={{ display: 'inline-block', padding: '6px 16px', borderRadius: '100px', background: 'rgba(16,185,129,0.2)', border: '1px solid rgba(52,211,153,0.3)', color: '#6ee7b7', fontSize: '13px', fontWeight: 600, marginBottom: '16px' }}>GIÁO TRÌNH ĐIỆN TỬ</div>

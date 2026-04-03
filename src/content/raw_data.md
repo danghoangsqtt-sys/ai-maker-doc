@@ -286,8 +286,8 @@ Gắn API của Gemini vào WebApp và thiết lập kỷ luật ngôn từ (Sys
         <span style="font-size: 20px;">🎬</span>
         <h4 style="color: #f8fafc; margin: 0; font-size: 1.1rem;">Video Ứng Dụng (Canvas)</h4>
       </div>
-      <video controls style="width: 100%; border-radius: 8px; border: 1px solid #334155;" poster="/cover.png">
-        <source src="/videos/tutorial_1_v4.mp4" type="video/mp4" />
+      <video controls style="width: 100%; border-radius: 8px; border: 1px solid #334155;" poster="./cover.png">
+        <source src="./videos/tutorial_1_v4.mp4" type="video/mp4" />
       </video>
     </div>
   </div>
@@ -353,8 +353,8 @@ graph TD
         <span style="font-size: 20px;">🎬</span>
         <h4 style="color: #f8fafc; margin: 0; font-size: 1.1rem;">Video Lập trình IoT</h4>
       </div>
-      <video controls style="width: 100%; border-radius: 8px; border: 1px solid #334155;" poster="/cover.png">
-        <source src="/videos/tutorial_2_v4.mp4" type="video/mp4" />
+      <video controls style="width: 100%; border-radius: 8px; border: 1px solid #334155;" poster="./cover.png">
+        <source src="./videos/tutorial_2_v4.mp4" type="video/mp4" />
       </video>
     </div>
     <div style="background: #0f172a; padding: 16px; border-radius: 16px; box-shadow: 0 10px 25px rgba(0,0,0,0.15);">

