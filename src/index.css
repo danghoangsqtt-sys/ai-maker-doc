@@ -458,10 +458,12 @@ h1, h2, h3, h4 {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.5); /* increased darkness to be noticeable */
     z-index: 998;
-    -webkit-backdrop-filter: blur(2px);
-    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+    cursor: pointer;
+    pointer-events: auto;
   }
   /* Adjust the toggle button left position when sidebar is open to match new width */
   :root {

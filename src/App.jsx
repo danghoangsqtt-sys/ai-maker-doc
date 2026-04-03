@@ -141,7 +141,7 @@ function MainContent({ currentSection, data, isLoggedIn, onEdit, isEditing, onSa
 
 function App() {
   const [currentSection, setCurrentSection] = useState('dashboard');
-  const [sidebarOpen, setSidebarOpen] = useState(true);
+  const [sidebarOpen, setSidebarOpen] = useState(window.innerWidth > 768);
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [isEditing, setIsEditing] = useState(false);
   const [courseData, setCourseData] = useState(() => parseCourseData(rawDataString));

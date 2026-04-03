@@ -4,7 +4,7 @@ import react from '@vitejs/plugin-react'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/ai-maker-doc/', // For GitHub Pages deployment
+  base: './', // Relative base for both GitHub Pages and Surge deployment
   build: {
     outDir: 'dist',
   }
