@@ -451,16 +451,16 @@ Ghi chú: Nếu hệ thống chưa đẹp như kỳ vọng, hãy yêu cầu AI *
 
 ---
 
-### Nhiệm vụ 3: Tự Code Công Cụ "Tổng Tài Giải Mã" (Hỗ Chợ Học Viên)
+### Nhiệm vụ 3: Tự Code Công Cụ "Phân Tích & Tóm Tắt Văn Bản" (Hỗ trợ Học viên)
 
 **Mục tiêu:** Lập trình WebApp có 3 tab hiển thị nội dung tóm tắt để hỗ trợ sinh viên tiêu hóa văn bản phức tạp.
 
 **Gợi ý Prompt để đồng chí tự triển khai:**
 ```text
-"Lập trình SPA (Single Page Context) dùng HTML thuần và CSS:
-- Nửa bên trái: Một khu vực Textarea khổng lồ có nút bấm to 'Phân Tích Kiến Thức'.
+"Lập trình SPA (Single Page Application) dùng HTML thuần và CSS:
+- Nửa bên trái: Một khu vực nhập liệu lớn (Textarea) kèm theo nút bấm nổi bật 'Phân Tích Kiến Thức'.
 - Nửa bên phải: Có 3 thẻ Tabs (Tóm tắt / Thuật ngữ / Câu hỏi kiểm tra).
-- Viết sẵn hàm Javascript giả lập 3 tab hoạt động khi nhấn vào (ẩn/hiện Content). Giao diện tối màu (Dark Mode) sành điệu."
+- Viết sẵn hàm Javascript giả lập 3 tab hoạt động khi nhấn vào (ẩn/hiện Content). Giao diện tối màu (Dark Mode) chuyên nghiệp và hiện đại."
 ```
 Hãy lặp lại Bước 2 và 3 của Luyện tập 1. Thách thức lớn nhất ở đây là kiểm tra xem tính năng chuyển Tab bằng Javascript có hoạt động chưa.
 
