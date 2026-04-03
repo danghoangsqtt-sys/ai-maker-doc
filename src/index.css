@@ -439,4 +439,33 @@ h1, h2, h3, h4 {
     font-size: 15px !important;
     line-height: 1.6 !important;
   }
+  
+  /* Mobile Sidebar Fixes */
+  .sidebar {
+    width: 260px !important;
+  }
+  .sidebar-header h2 {
+    font-size: 1rem !important;
+  }
+  .nav-item {
+    font-size: 0.85rem !important;
+    padding: 10px 15px !important;
+  }
+  .sidebar-overlay {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 998;
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+  }
+  /* Adjust the toggle button left position when sidebar is open to match new width */
+  :root {
+    --toggle-left-open: 228px; /* 260px - 32px roughly */
+  }
 }
+
