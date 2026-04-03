@@ -368,49 +368,7 @@ graph TD
   </div>
 </div>
 
----
 
-### SƠ ĐỒ 7: SO SÁNH TRƯỚC VÀ SAU KHI ÁP DỤNG AI
-
-<div className="ai-comparison-wrapper">
-  <table>
-    <thead>
-      <tr>
-        <th className="before-header">❌ TRƯỚC KHI CÓ AI</th>
-        <th className="after-header">✅ SAU KHI CÓ AI</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td className="before-cell">
-          <div className="comp-item"><span className="icon">📝</span> <b>Thủ công 100%</b></div>
-          <div className="comp-arrow">↓</div>
-          <div className="comp-item"><span className="icon">⏱️</span> <b>Chậm</b> (4 giờ/giáo án)</div>
-          <div className="comp-arrow">↓</div>
-          <div className="comp-item"><span className="icon">⚠️</span> <b>Sai sót</b> (Do mệt mỏi, lặp lại)</div>
-          <div className="comp-arrow">↓</div>
-          <div className="comp-item"><span className="icon">😰</span> <b>Quá tải</b> (Giảng viên kiệt sức)</div>
-        </td>
-        <td className="after-cell">
-          <div className="comp-item"><span className="icon">🤖</span> <b>AI hỗ trợ 70%</b></div>
-          <div className="comp-arrow">↓</div>
-          <div className="comp-item"><span className="icon">⚡</span> <b>Nhanh</b> (15 giây/giáo án)</div>
-          <div className="comp-arrow">↓</div>
-          <div className="comp-item"><span className="icon">✅</span> <b>Chuẩn hóa</b> (Đồng nhất chất lượng)</div>
-          <div className="comp-arrow">↓</div>
-          <div className="comp-item"><span className="icon">💪</span> <b>Tập trung</b> (GV lo chuyên môn sâu)</div>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-
-> **Mô tả sơ đồ:** So sánh 2 mô hình làm việc. **Trước**: Thủ công → Chậm → Sai sót → Quá tải. **Sau**: AI hỗ trợ → Nhanh → Chuẩn hóa → Giảng viên tập trung chuyên môn sâu. AI không thay thế con người, mà giải phóng con người khỏi công việc lặp lại.
-
-**Hình minh họa đề xuất:**
-- Infographic chia đôi: Nửa trái (tông đỏ/xám) mô tả quy trình cũ; Nửa phải (tông xanh/sáng) mô tả quy trình mới.
-- Số liệu nổi bật: "4 giờ → 15 giây", "70% thời gian tiết kiệm".
-- Phù hợp cho slide tổng kết hoặc landing page báo cáo.
 
 ---
 
