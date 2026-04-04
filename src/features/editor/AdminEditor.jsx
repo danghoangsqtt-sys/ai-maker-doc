@@ -4,8 +4,7 @@ import React, { useState } from 'react';
 const CRED_U = "YWRtaW4="; // b64 of 'admin'
 const CRED_P = "MTIzNDU2"; // b64 of '123456'
 
-export default function AdminEditor({ isLoggedIn, onAuthChange }) {
-  const [isModalOpen, setIsModalOpen] = useState(false);
+export default function AdminEditor({ isLoggedIn, onAuthChange, isModalOpen, setIsModalOpen }) {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
@@ -28,33 +27,7 @@ export default function AdminEditor({ isLoggedIn, onAuthChange }) {
 
   return (
     <>
-      {/* Floating Action Button */}
-      <button 
-        onClick={() => setIsModalOpen(true)}
-        style={{
-          position: 'fixed',
-          bottom: '24px',
-          right: '24px',
-          width: '56px',
-          height: '56px',
-          borderRadius: '28px',
-          background: isLoggedIn ? '#3b82f6' : '#10b981',
-          color: '#fff',
-          border: 'none',
-          boxShadow: '0 4px 12px rgba(0,0,0,0.3)',
-          cursor: 'pointer',
-          fontSize: '24px',
-          zIndex: 2000,
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          transition: 'all 0.2s ease'
-        }}
-        onMouseEnter={(e) => e.currentTarget.style.transform = 'scale(1.1)'}
-        onMouseLeave={(e) => e.currentTarget.style.transform = 'scale(1)'}
-      >
-        {isLoggedIn ? '👤' : '⚙️'}
-      </button>
+
 
       {/* Auth Modal */}
       {isModalOpen && (

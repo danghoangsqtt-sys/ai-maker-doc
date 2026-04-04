@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Sidebar({ currentSection, setCurrentSection, isOpen, onToggle, courseData }) {
+export default function Sidebar({ currentSection, setCurrentSection, isOpen, onToggle, courseData, onSettingsClick, isLoggedIn }) {
   return (
     <>
       {/* Toggle Button - always visible */}
@@ -73,6 +73,37 @@ export default function Sidebar({ currentSection, setCurrentSection, isOpen, onT
               {sec.title}
             </div>
           ))}
+        </div>
+        
+        {/* Settings Button at bottom of sidebar */}
+        <div style={{
+          padding: '12px 16px',
+          borderTop: '1px solid rgba(255, 255, 255, 0.1)',
+          marginTop: 'auto',
+        }}>
+          <div
+            onClick={() => {
+              onSettingsClick();
+              if (window.innerWidth <= 768) onToggle();
+            }}
+            style={{
+              padding: '10px 16px',
+              borderRadius: '8px',
+              background: isLoggedIn ? 'rgba(59, 130, 246, 0.2)' : 'rgba(255, 255, 255, 0.05)',
+              border: isLoggedIn ? '1px solid rgba(59, 130, 246, 0.3)' : '1px solid rgba(255, 255, 255, 0.1)',
+              cursor: 'pointer',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '10px',
+              transition: 'all 0.2s',
+              color: '#fff',
+              fontSize: '0.9rem',
+              fontWeight: 500,
+            }}
+          >
+            <span style={{ fontSize: '16px' }}>{isLoggedIn ? '👤' : '⚙️'}</span>
+            <span>{isLoggedIn ? 'Đã đăng nhập (Admin)' : 'Cài đặt'}</span>
+          </div>
         </div>
       </div>
     </>

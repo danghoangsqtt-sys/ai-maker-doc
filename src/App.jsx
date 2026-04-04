@@ -148,6 +148,7 @@ function App() {
   const [sidebarOpen, setSidebarOpen] = useState(window.innerWidth > 768);
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [isEditing, setIsEditing] = useState(false);
+  const [isSettingsModalOpen, setIsSettingsModalOpen] = useState(false);
   const [courseData, setCourseData] = useState(() => parseCourseData(rawDataString));
 
   const handleSaveSection = async () => {
@@ -191,6 +192,8 @@ function App() {
         isOpen={sidebarOpen}
         onToggle={() => setSidebarOpen(!sidebarOpen)}
         courseData={courseData}
+        onSettingsClick={() => setIsSettingsModalOpen(true)}
+        isLoggedIn={isLoggedIn}
       />
       <div 
         id="main-wrapper" 
@@ -218,7 +221,7 @@ function App() {
       </div>
       
       {/* Admin Auth Feature */}
-      <AdminEditor isLoggedIn={isLoggedIn} onAuthChange={setIsLoggedIn} />
+      <AdminEditor isLoggedIn={isLoggedIn} onAuthChange={setIsLoggedIn} isModalOpen={isSettingsModalOpen} setIsModalOpen={setIsSettingsModalOpen} />
     </div>
   );
 }
