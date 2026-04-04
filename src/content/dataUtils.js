@@ -37,7 +37,7 @@ export function parseCourseData(mdContent) {
   return {
     dashboard: {
       id: 'dashboard',
-      title: "XÂY DỰNG ỨNG DỤNG AI TRONG MÔI TRƯỜNG HỌC THUẬT – SƯ PHẠM",
+      title: "XÂY DỰNG ỨNG DỤNG AI TRONG HOẠT ĐỘNG HÀNH CHÍNH - QUÂN SỰ - SƯ PHẠM",
       theory: introPart.trim()
     },
     modules: chapters.map((chap) => {

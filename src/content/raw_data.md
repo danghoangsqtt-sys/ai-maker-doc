@@ -1,4 +1,4 @@
-# XÂY DỰNG ỨNG DỤNG AI TRONG MÔI TRƯỜNG HỌC THUẬT – SƯ PHẠM
+# XÂY DỰNG ỨNG DỤNG AI TRONG HOẠT ĐỘNG HÀNH CHÍNH - QUÂN SỰ - SƯ PHẠM
 
 ## MỤC ĐÍCH – ĐỐI TƯỢNG – PHẠM VI ÁP DỤNG
 
