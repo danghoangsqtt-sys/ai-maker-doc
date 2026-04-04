@@ -75,18 +75,63 @@ function MainContent({ currentSection, data, isLoggedIn, onEdit, isEditing, onSa
             
             {/* Dashboard Hero Section at the Top */}
             {currentSection === 'dashboard' && (
-              <div style={{ marginBottom: '32px' }}>
+              <div style={{ marginBottom: '40px' }}>
                 <div style={{ 
                   position: 'relative', 
                   width: '100%', 
-                  height: '240px', 
+                  height: '300px', 
                   borderRadius: '16px', 
                   overflow: 'hidden', 
-                  boxShadow: '0 20px 40px rgba(0,0,0,0.1)' 
+                  boxShadow: '0 25px 55px rgba(0,0,0,0.25)',
+                  border: '1px solid rgba(255,255,255,0.05)'
                 }}>
+                  {/* High-res Background */}
                   <img src="./cover.png" alt="Cover" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-                  {/* Subtle dark gradient for better integration */}
-                  <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(15,23,42,0.4), transparent)' }} />
+                  
+                  {/* Dynamic Glossy Overlay */}
+                  <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, #0f172a 0%, rgba(15,23,42,0.6) 40%, transparent 100%)' }} />
+                  <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(circle at top left, rgba(56,189,248,0.1), transparent 50%)' }} />
+
+                  {/* Branding Content - Digital for Maximum Sharpness */}
+                  <div style={{ position: 'absolute', bottom: 0, left: 0, padding: '36px', zIndex: 1, width: '100%' }}>
+                    <div style={{ 
+                      display: 'inline-block', 
+                      padding: '5px 14px', 
+                      borderRadius: '100px', 
+                      background: 'rgba(16,185,129,0.15)', 
+                      border: '1px solid rgba(52,211,153,0.3)', 
+                      color: '#6ee7b7', 
+                      fontSize: '12px', 
+                      fontWeight: 700, 
+                      letterSpacing: '1px',
+                      textTransform: 'uppercase',
+                      marginBottom: '14px',
+                      backdropFilter: 'blur(4px)'
+                    }}>Giáo trình Điện tử</div>
+                    
+                    <h2 style={{ 
+                      color: '#fff', 
+                      fontSize: '2.4rem', 
+                      fontWeight: 900, 
+                      margin: '0 0 8px 0', 
+                      letterSpacing: '-1px',
+                      textShadow: '0 2px 4px rgba(0,0,0,0.3)'
+                    }}>
+                      Tác giả: LÊ BÁ ĐĂNG HOÀNG
+                    </h2>
+                    
+                    <p style={{ 
+                      color: '#cbd5e1', 
+                      fontSize: '1.2rem', 
+                      fontWeight: 500,
+                      margin: 0,
+                      opacity: 0.9,
+                      textTransform: 'uppercase',
+                      letterSpacing: '0.5px'
+                    }}>
+                      KHOA CƠ SỞ - BỘ MÔN ĐIỆN TỬ SỐ
+                    </p>
+                  </div>
                 </div>
               </div>
             )}
