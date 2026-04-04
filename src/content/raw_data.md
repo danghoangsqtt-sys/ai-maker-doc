@@ -382,6 +382,21 @@ graph TD
 |-----|------|
 | Code tự động đẩy dữ liệu sinh từ AI thẳng lên Hệ thống Đào tạo. | Yêu cầu AI code: "Sau khi AI trả kết quả, phải hiện lên một Textbox để người dùng xem lại và sửa. Chỉ khi bấm nút 'Ký Duyệt' thì quy trình mới kết thúc." |
 
+```mermaid
+flowchart TD
+    A["📥 Dữ liệu vào"] --> B["🤖 AI xử lý"]
+    B --> C{"❓ Có bước\nkiểm duyệt?"}
+    C -->|"❌ KHÔNG"| D["💾 Lưu thẳng lên hệ thống\n⚠️ RỦI RO CAO"]
+    C -->|"✅ CÓ"| E["👤 Con người kiểm duyệt"]
+    E --> F["✅ Phê duyệt → Lưu trữ an toàn"]
+    
+    style D fill:#fee2e2,stroke:#ef4444,color:#991b1b
+    style E fill:#dcfce7,stroke:#22c55e,color:#166534
+    style F fill:#dcfce7,stroke:#22c55e,color:#166534
+```
+
+---
+
 ### Lỗi 2: CHỈ YÊU CẦU LOGIC MÀ QUÊN MẤT UI (GIAO DIỆN)
 
 > Viết ra một WebApp thì phải có form nhập liệu rõ ràng. Đừng ép người dùng cuối phải nhìn màn hình đen sì của lập trình viên.
@@ -390,13 +405,42 @@ graph TD
 |---------------|----------------|
 | "Viết code kết nối Gemini API để làm tóm tắt văn bản." | "Thiết kế WebApp bằng HTML/Tailwind. Phía trên là khung Header đỏ đô chuyên nghiệp. Ở giữa chia làm 2 cột: Cột trái chứa Form nhập liệu có viền bóng đổ, cột phải chứa phần hiển thị kết quả. Chức năng ở phía sau dùng JS để kết nối API..." |
 
+```mermaid
+flowchart TD
+    A["⌨️ Prompt chỉ yêu cầu Logic"] --> B["🤖 API trả JSON thô"]
+    B --> C["😵 Người dùng không biết dùng"]
+    
+    D["📝 Prompt mô tả giao diện chi tiết"] --> E["🖥️ WebApp có Form nhập liệu đẹp"]
+    E --> F["📊 Hiển thị kết quả trực quan"]
+    F --> G["😊 Người dùng thao tác dễ dàng"]
+
+    style C fill:#fee2e2,stroke:#ef4444,color:#991b1b
+    style G fill:#dcfce7,stroke:#22c55e,color:#166534
+```
+
+---
+
 ### Lỗi 3: KHÔNG THIẾT KẾ XỬ LÝ LỖI (ERROR HANDLING) ĐƯỜNG TRUYỀN
 
 **Vấn đề:** Khi AI server bị quá tải (delay), kết quả có thể mất 15-20 giây mới trả về. Nếu không báo cho người dùng, họ sẽ bấm nút gửi lại liên tục làm treo máy.
 
 | Hậu quả | Lệnh khắc phục ngay trong Prompt |
-|---------|---------------------------------|
-| Người sử dụng bấm liên tục vì tưởng nút bấm bị hỏng | "Thêm tính năng bắt lỗi mạng. Nhấn nút tạo báo cáo phải hiển thị trạng thái 'Loading/Vòng xoay' và vô hiệu hóa nút bấm tạm thời. Nêú kết nối thất bại sau 10s, hiển thị cảnh báo đỏ 'Vui lòng thử lại'". |
+|---------|----------------------------------|
+| Người sử dụng bấm liên tục vì tưởng nút bấm bị hỏng | "Thêm tính năng bắt lỗi mạng. Nhấn nút tạo báo cáo phải hiển thị trạng thái 'Loading/Vòng xoay' và vô hiệu hóa nút bấm tạm thời. Nếu kết nối thất bại sau 10s, hiển thị cảnh báo đỏ 'Vui lòng thử lại'". |
+
+```mermaid
+flowchart TD
+    A["👆 Người dùng bấm Gửi"] --> B{"🔄 Có Loading\nIndicator?"}
+    B -->|"❌ KHÔNG"| C["👆👆👆 Bấm liên tục\n→ Treo máy!"]
+    B -->|"✅ CÓ"| D["⏳ Hiển thị Loading\n+ Khóa nút bấm"]
+    D --> E{"⏱️ Phản hồi\ntrong 10s?"}
+    E -->|"Có"| F["✅ Trả kết quả"]
+    E -->|"Không"| G["🔴 Cảnh báo: Vui lòng thử lại"]
+
+    style C fill:#fee2e2,stroke:#ef4444,color:#991b1b
+    style F fill:#dcfce7,stroke:#22c55e,color:#166534
+    style G fill:#fffbeb,stroke:#f59e0b,color:#92400e
+```
 
 > **Key Takeaway:** Bạn đang ra lệnh để máy tính tự xây dựng một công cụ hoàn chỉnh. Suy nghĩ chặt chẽ như một Kiến trúc sư Hệ thống: Có Đầu vào (UI), Có Xử lý (Logic+AI), Có Bảo mật, và Có Bắt lỗi mạng.
 

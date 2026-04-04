@@ -14,9 +14,7 @@ import Sidebar from './components/ui/Sidebar';
 import MermaidViewer from './components/ui/MermaidViewer';
 import ThemeBanner from './components/ui/ThemeBanner';
 
-// Interactive Features
 import InteractiveQuiz from './components/quiz/InteractiveQuiz';
-import CommonMistakes from './components/diagrams/CommonMistakes';
 
 // Features
 import AdminEditor from './features/editor/AdminEditor';
@@ -104,8 +102,6 @@ function MainContent({ currentSection, data, isLoggedIn, onEdit, isEditing, onSa
 
 
 
-                {/* Common Mistakes Diagram - Chương IV */}
-                {currentSection === 3 && <CommonMistakes />}
 
                 {/* Interactive Quiz - Chương V */}
                 {currentSection === 4 && <InteractiveQuiz />}
