@@ -30,7 +30,7 @@ const quizData = [
     explanation: "4 yếu tố bao gồm: (1) Đặt vai, (2) Giao nhiệm vụ cụ thể, (3) Quy định định dạng, (4) Giới hạn phong cách/kỷ luật."
   },
   {
-    question: "Bước đầu tiên trong quy trình 7 bước xây dựng công cụ AI là gì?",
+    question: "Bước đầu tiên trong quy trình 5 bước xây dựng công cụ AI là gì?",
     options: [
       "Tiến hành Code ngay lập tức",
       "Chọn nền tảng AI",
@@ -155,7 +155,7 @@ export default function InteractiveQuiz() {
           <h4 style={{ color: '#0f172a', marginTop: 0, borderBottom: '2px solid #3b82f6', paddingBottom: '10px', display: 'inline-block' }}>TỔNG KẾT NỘI DUNG KHÓA HỌC</h4>
           <ul style={{ color: '#475569', lineHeight: 1.8, margin: 0, paddingLeft: '20px' }}>
             <li><strong>Mục đích:</strong> AI sinh ra để làm trợ lý, không phải để thay thế trách nhiệm của cán bộ.</li>
-            <li><strong>Phương pháp:</strong> Nắm vững 4 yếu tố cấu thành Prompt và Quy trình 7 bước triển khai AI.</li>
+            <li><strong>Phương pháp:</strong> Nắm vững 4 yếu tố cấu thành Prompt và Quy trình 5 bước triển khai AI.</li>
             <li><strong>Nguyên tắc thép:</strong> Con người luôn quyết định cuối cùng, tuyệt đối không đưa tài liệu mật lên mạng ảo.</li>
             <li><strong>Đích đến:</strong> Tự động hóa thủ tục, cá nhân hóa học tập, giúp giải phóng sức lao động để tập trung cho chuyên môn sâu.</li>
           </ul>

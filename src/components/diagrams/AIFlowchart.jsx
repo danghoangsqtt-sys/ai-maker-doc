@@ -53,7 +53,7 @@ const steps = [
   }
 ];
 
-export default function SevenStepsFlow() {
+export default function FiveStepsFlow() {
   const [hoveredStep, setHoveredStep] = useState(null);
 
   return (

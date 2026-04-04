@@ -15,16 +15,17 @@ import MermaidViewer from './components/ui/MermaidViewer';
 import ThemeBanner from './components/ui/ThemeBanner';
 
 // Diagram Components
-import SevenStepsFlow from './components/diagrams/AIFlowchart';
+import FiveStepsFlow from './components/diagrams/AIFlowchart';
 import AIFlowchart5Steps from './components/diagrams/AIFlowchart_5_Steps';
 
 // Interactive Features
 import InteractiveQuiz from './components/quiz/InteractiveQuiz';
+import CommonMistakes from './components/diagrams/CommonMistakes';
 
 // Features
 import AdminEditor from './features/editor/AdminEditor';
 
-const CodeRenderer = ({ node, inline, className, children, ...props }) => {
+const CodeRenderer = ({ inline, className, children, ...props }) => {
   const match = /language-(\w+)/.exec(className || '');
   const content = String(children).replace(/\n$/, '');
 
@@ -32,8 +33,8 @@ const CodeRenderer = ({ node, inline, className, children, ...props }) => {
     if (content.includes('NHU CẦU THỰC TẾ') && content.includes('HIỆU QUẢ') && !content.includes('BƯỚC 7')) {
       return <AIFlowchart5Steps />;
     }
-    if (content.includes('Xác định nhiệm vụ') && content.includes('Triển khai thực tiễn')) {
-      return <SevenStepsFlow />;
+    if (content.includes('Xác định nhiệm vụ') || content.includes('Triển khai thực tiễn') || content.includes('QUY TRÌNH 5 BƯỚC')) {
+      return <FiveStepsFlow />;
     }
     return <MermaidViewer chart={content} />;
   }
@@ -112,6 +113,9 @@ function MainContent({ currentSection, data, isLoggedIn, onEdit, isEditing, onSa
                 </ReactMarkdown>
 
 
+
+                {/* Common Mistakes Diagram - Chương IV */}
+                {currentSection === 3 && <CommonMistakes />}
 
                 {/* Interactive Quiz - Chương V */}
                 {currentSection === 4 && <InteractiveQuiz />}

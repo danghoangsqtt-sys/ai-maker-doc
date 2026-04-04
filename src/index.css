@@ -522,6 +522,11 @@ h1, h2, h3, h4 {
   .flowchart-zig-empty {
     display: none !important;
   }
+
+  /* CommonMistakes Mobile Fixes */
+  .mistakes-grid {
+    grid-template-columns: 1fr !important;
+  }
 }
 
 
