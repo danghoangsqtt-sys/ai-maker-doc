@@ -1,4 +1,4 @@
-# XÂY DỰNG ỨNG DỤNG AI TRONG MÔI TRƯỜNG HÀNH CHÍNH - QUÂN SỰ - SƯ PHẠM
+# XÂY DỰNG ỨNG DỤNG AI TRONG MÔI TRƯỜNG HỌC THUẬT – SƯ PHẠM
 
 ## MỤC ĐÍCH – ĐỐI TƯỢNG – PHẠM VI ÁP DỤNG
 
@@ -6,8 +6,8 @@
 
 Tài liệu này được biên soạn dưới góc độ **chuyên sâu** của một chuyên gia thiết kế giáo dục, nhằm cung cấp:
 
-- Một **quy trình chuẩn hóa**, mang tính kỷ luật, logic và chính xác cao để xây dựng các ứng dụng AI phục vụ nhiệm vụ huấn luyện, giảng dạy và quản lý trong nhà trường cơ sở giáo dục.
-- Một **khung tư duy hành động** giúp chuyên viên, giảng viên chuyển đổi từ người dùng thụ động sang **Người Quản Lý AI** – chủ động khai thác trí tuệ nhân tạo như một công cụ thực tiễn thông tin.
+- Một **quy trình chuẩn hóa 5 bước**, mang tính kỷ luật, logic và chính xác cao để xây dựng các ứng dụng AI phục vụ nhiệm vụ huấn luyện, giảng dạy và quản lý trong cơ sở giáo dục.
+- Một **khung tư duy hành động** giúp chuyên viên, giảng viên chuyển đổi từ người dùng thụ động sang **Người Quản Lý AI** – chủ động khai thác trí tuệ nhân tạo như một công cụ thực tiễn.
 
 ### Đối tượng sử dụng
 
@@ -15,7 +15,7 @@ Tài liệu này được biên soạn dưới góc độ **chuyên sâu** của
 |-----|-----------|---------|
 | 1 | Lãnh đạo, Quản lý các cấp | Nắm bắt tổng quan, phê duyệt triển khai |
 | 2 | Giảng viên các khoa chuyên ngành | Trực tiếp xây dựng và sử dụng công cụ AI |
-| 3 | Chuyên viên quản lý giáo dục | Ứng dụng AI vào công tác hành chính, hành chính |
+| 3 | Chuyên viên quản lý giáo dục | Ứng dụng AI vào công tác quản lý hành chính |
 
 ### Yêu cầu tiên quyết
 
@@ -23,7 +23,24 @@ Tài liệu này được biên soạn dưới góc độ **chuyên sâu** của
 - **Không** yêu cầu kiến thức chuyên sâu về thuật toán AI.
 - **Chỉ cần**: Khả năng sử dụng máy tính cơ bản và tư duy ra yêu cầu rõ ràng.
 
-> **Key Takeaway:** Tài liệu này biến mọi chuyên viên, giảng viên thành Người Quản Lý AI – không cần biết lập trình, chỉ cần biết ra lệnh đúng.
+> **Key Takeaway:** Tài liệu này biến mọi chuyên viên, giảng viên thành Người Quản Lý AI – không cần biết lập trình, chỉ cần nắm vững nguyên tắc: **"Ra lệnh đúng – Kiểm duyệt chặt – Triển khai nhanh – Cải tiến liên tục."**
+
+---
+
+### CẤU TRÚC TÀI LIỆU
+
+Tài liệu được tổ chức thành **6 phần** theo mạch logic từ tư duy đến hành động:
+
+| Phần | Nội dung | Mục tiêu |
+|------|----------|----------|
+| **Phần I** | Nắm vững Tư duy Cốt lõi | Xác lập đúng vai trò và tư duy khi làm việc với AI |
+| **Phần II** | Quy trình 5 Bước xây dựng Công cụ AI | Nắm vững phương pháp luận từ ý tưởng đến sản phẩm |
+| **Phần III** | Các Mô hình Sản phẩm Thực tế | Học qua 2 case study: EduBot Chatbot & Đèn học IoT |
+| **Phần IV** | Các Lỗi Sai Cần Tránh | Phòng tránh 3 sai lầm phổ biến khi thiết kế công cụ AI |
+| **Phần V** | Bài tập Trắc nghiệm Đánh giá | Tự kiểm tra kiến thức (yêu cầu đạt 8/10) |
+| **Phần VI** | Bài tập Thực tiễn | Thực hành lập trình bằng yêu cầu (Prompt) |
+
+> Mỗi phần đều bám sát nguyên tắc: AI là **công cụ phục vụ nhiệm vụ**, con người giữ vai trò **kiểm duyệt và phê duyệt cuối cùng**, và mọi sản phẩm phải đảm bảo **bảo mật thông tin tổ chức**.
 
 ---
 
@@ -31,7 +48,7 @@ Tài liệu này được biên soạn dưới góc độ **chuyên sâu** của
 
 ### 1.1. Định vị AI trong môi trường học thuật – giáo dục
 
-Trong môi trường học thuật và giáo dục, AI **không phải** là một môn học để nghiên cứu lý thuyết vi mô. AI là một **công cụ thực tiễn** để **TẠO RA SẢN PHẨM PHỤC VỤ NHIỆM VỤ**.
+Trong môi trường học thuật và giáo dục, AI **không phải** là một môn học để nghiên cứu lý thuyết vi mô. AI là một **công cụ thực tiễn** để **TẠO RA SẢN PHẨM PHỤC VỤ NHIỆM VỤ** — từ chatbot hỗ trợ học tập đến hệ thống IoT thông minh (xem chi tiết tại Phần III).
 
 | Tư duy sai ❌ | Tư duy đúng ✅ |
 |---------------|----------------|
@@ -51,15 +68,15 @@ Chúng ta **không** yêu cầu chuyên viên, giảng viên học cách AI tín
 
 ### 1.3. Ba lĩnh vực ứng dụng trọng tâm
 
-| Lĩnh vực | Ứng dụng cụ thể | Ví dụ |
-|-----------|-----------------|-------|
-| **Huấn luyện, giảng dạy** | Soạn giáo án, tạo đề thi, thiết kế bài giảng | Công cụ sinh giáo án tự động |
-| **Học tập, nghiên cứu** | Hỏi đáp, tóm tắt tài liệu, ôn tập | Trợ giảng ảo Aura AI |
-| **Quản lý, quản lý hành chính** | Soạn báo cáo, tổng hợp kế hoạch | Trợ lý Hành chính AI |
+| Lĩnh vực | Ứng dụng cụ thể | Ví dụ trong tài liệu |
+|-----------|-----------------|----------------------|
+| **Huấn luyện, giảng dạy** | Soạn giáo án, tạo đề thi, thiết kế bài giảng | Đèn học thông minh AI – Smart IoT Lamp *(Phần III, Ví dụ 2)* |
+| **Học tập, nghiên cứu** | Hỏi đáp, tóm tắt tài liệu, ôn tập | Chatbot AI hỗ trợ học tập – EduBot *(Phần III, Ví dụ 1)* |
+| **Quản lý hành chính** | Soạn báo cáo, tổng hợp kế hoạch, quản lý lịch công tác | Trợ lý Hành văn Tự động *(Phần VI, Nhiệm vụ 4)* |
 
 ---
 
-### SƠ ĐỒ 1: TỔNG THỂ HỆ THỐNG AI TRONG NHÀ TRƯỜNG CƠ SỞ GIÁO DỤC
+### SƠ ĐỒ 1: TỔNG THỂ HỆ THỐNG AI TRONG CƠ SỞ GIÁO DỤC
 
 ```mermaid
 flowchart TD
@@ -70,12 +87,37 @@ flowchart TD
     E -.->|"Phản hồi cải tiến"| A
 ```
 
-> **Mô tả sơ đồ:** Hệ thống AI trong nhà trường cơ sở giáo dục vận hành theo vòng khép kín: Từ nhu cầu thực tế → AI xử lý → Tạo sản phẩm → Người dùng sử dụng → Đánh giá hiệu quả → Phản hồi để cải tiến. Vòng lặp này đảm bảo sản phẩm AI luôn sát nhiệm vụ thực tế.
+> **Mô tả sơ đồ:** Hệ thống AI trong cơ sở giáo dục vận hành theo vòng khép kín: Từ nhu cầu thực tế → AI xử lý → Tạo sản phẩm → Người dùng sử dụng → Đánh giá hiệu quả → Phản hồi để cải tiến. Vòng lặp này đảm bảo sản phẩm AI luôn sát nhiệm vụ thực tế.
 
 **Hình minh họa đề xuất:**
-- Sơ đồ vòng tròn 5 thành phần với mũi tên liên kết, trung tâm là biểu tượng nhà trường cơ sở giáo dục.
-- Mỗi thành phần có icon đại diện và màu sắc phân biệt (xanh chủ đạo là chủ đạo).
+- Sơ đồ vòng tròn 5 thành phần với mũi tên liên kết, trung tâm là biểu tượng cơ sở giáo dục.
+- Mỗi thành phần có icon đại diện và màu sắc phân biệt (xanh là chủ đạo).
 - Phù hợp để đặt ở slide mở đầu hoặc trang bìa phụ của tài liệu.
+
+### 1.4. Nguyên tắc Bảo mật Thông tin
+
+> ⚠️ **Nguyên tắc thép:** Tuyệt đối **KHÔNG** nhập dữ liệu mật, thông tin nội bộ nhạy cảm vào các nền tảng AI công khai (public). Mọi dữ liệu đầu vào phải được phân loại mức độ bảo mật trước khi đưa vào hệ thống AI.
+
+| Loại dữ liệu | Được phép sử dụng AI công khai? | Giải pháp |
+|---------------|--------------------------------|----------|
+| Tài liệu giảng dạy công khai | ✅ Có | Sử dụng trực tiếp |
+| Đề thi, đáp án chưa công bố | ❌ Không | Sử dụng AI nội bộ (LAN) |
+| Thông tin tổ chức nội bộ | ❌ Không | Sử dụng AI nội bộ hoặc ẩn danh hóa |
+
+---
+
+### 1.5. Kết nối với Quy trình Thực hành
+
+Các nguyên tắc tư duy tại Phần I chính là nền tảng để triển khai **Quy trình 5 Bước Xây dựng Công cụ AI** (Phần II). Cụ thể:
+
+| Tư duy cốt lõi (Phần I) | Bước thực hành tương ứng (Phần II) |
+|--------------------------|------------------------------------|
+| Xác định AI là công cụ tạo sản phẩm | **Bước 1:** Xác định & Phân tích yêu cầu AI |
+| Ra yêu cầu chính xác | **Bước 2:** Thiết kế & Lập trình bằng Prompt |
+| Kiểm duyệt chặt chẽ kết quả | **Bước 4:** Kiểm định & Thẩm định chuyên môn |
+| Đóng gói thành công cụ | **Bước 5:** Triển khai thực tiễn |
+
+> Sau khi nắm vững tư duy cốt lõi, đồng chí hãy chuyển sang **Phần II** để thực hành quy trình từng bước.
 
 ---
 

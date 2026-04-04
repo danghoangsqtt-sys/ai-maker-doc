@@ -15,7 +15,7 @@ function parseCourseData(mdContent) {
   return {
     dashboard: {
       id: 'dashboard',
-      title: "QUY TRÌNH XÂY DỰNG ỨNG DỤNG AI TRONG MÔI TRƯỜNG HÀNH CHÍNH - QUÂN SỰ - SƯ PHẠM",
+      title: "XÂY DỰNG ỨNG DỤNG AI TRONG MÔI TRƯỜNG HỌC THUẬT – SƯ PHẠM",
       theory: introPart.trim()
     },
     modules: chapters.map((chap) => {
