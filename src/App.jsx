@@ -14,10 +14,6 @@ import Sidebar from './components/ui/Sidebar';
 import MermaidViewer from './components/ui/MermaidViewer';
 import ThemeBanner from './components/ui/ThemeBanner';
 
-// Diagram Components
-import FiveStepsFlow from './components/diagrams/AIFlowchart';
-import AIFlowchart5Steps from './components/diagrams/AIFlowchart_5_Steps';
-
 // Interactive Features
 import InteractiveQuiz from './components/quiz/InteractiveQuiz';
 import CommonMistakes from './components/diagrams/CommonMistakes';
@@ -30,12 +26,6 @@ const CodeRenderer = ({ inline, className, children, ...props }) => {
   const content = String(children).replace(/\n$/, '');
 
   if (!inline && match && match[1] === 'mermaid') {
-    if (content.includes('NHU CẦU THỰC TẾ') && content.includes('HIỆU QUẢ') && !content.includes('BƯỚC 7')) {
-      return <AIFlowchart5Steps />;
-    }
-    if (content.includes('Xác định nhiệm vụ') || content.includes('Triển khai thực tiễn') || content.includes('QUY TRÌNH 5 BƯỚC')) {
-      return <FiveStepsFlow />;
-    }
     return <MermaidViewer chart={content} />;
   }
 
