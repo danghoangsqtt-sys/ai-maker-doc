@@ -107,7 +107,7 @@ function MainContent({ currentSection, data, isLoggedIn, onEdit, isEditing, onSa
                       textTransform: 'uppercase',
                       marginBottom: '14px',
                       backdropFilter: 'blur(4px)'
-                    }}>Giáo trình Điện tử</div>
+                    }}>Hướng dẫn thực hành ứng dụng AI</div>
                     
                     <h2 style={{ 
                       color: '#fff', 
