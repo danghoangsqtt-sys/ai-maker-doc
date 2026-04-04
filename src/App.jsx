@@ -73,6 +73,24 @@ function MainContent({ currentSection, data, isLoggedIn, onEdit, isEditing, onSa
 
           <div className="markdown-body" style={{ color: 'var(--text-main)', fontFamily: "'Inter', system-ui, sans-serif", fontSize: '16px', lineHeight: 1.8 }}>
             
+            {/* Dashboard Hero Section at the Top */}
+            {currentSection === 'dashboard' && (
+              <div style={{ marginBottom: '32px' }}>
+                <div style={{ 
+                  position: 'relative', 
+                  width: '100%', 
+                  height: '240px', 
+                  borderRadius: '16px', 
+                  overflow: 'hidden', 
+                  boxShadow: '0 20px 40px rgba(0,0,0,0.1)' 
+                }}>
+                  <img src="./cover.png" alt="Cover" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                  {/* Subtle dark gradient for better integration */}
+                  <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(15,23,42,0.4), transparent)' }} />
+                </div>
+              </div>
+            )}
+
             {isEditing ? (
               <textarea 
                 value={data.theory}
@@ -100,26 +118,8 @@ function MainContent({ currentSection, data, isLoggedIn, onEdit, isEditing, onSa
                   {data.theory}
                 </ReactMarkdown>
 
-
-
-
                 {/* Interactive Quiz - Chương V */}
                 {currentSection === 4 && <InteractiveQuiz />}
-
-                {/* Dashboard Hero Section */}
-                {currentSection === 'dashboard' && (
-                  <div style={{ marginTop: '40px' }}>
-                    <div style={{ position: 'relative', width: '100%', height: '400px', borderRadius: '16px', overflow: 'hidden', boxShadow: '0 25px 50px rgba(0,0,0,0.15)' }}>
-                      <img src="./cover.png" alt="Cover" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-                      <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, #0f172a, rgba(15,23,42,0.6), transparent)' }} />
-                      <div style={{ position: 'absolute', bottom: 0, left: 0, padding: '32px', zIndex: 1 }}>
-                        <div style={{ display: 'inline-block', padding: '6px 16px', borderRadius: '100px', background: 'rgba(16,185,129,0.2)', border: '1px solid rgba(52,211,153,0.3)', color: '#6ee7b7', fontSize: '13px', fontWeight: 600, marginBottom: '16px' }}>GIÁO TRÌNH ĐIỆN TỬ</div>
-                        <h2 style={{ color: '#fff', fontSize: '2.5rem', fontWeight: 800, margin: '0 0 16px 0' }}>LÊ BÁ ĐĂNG HOÀNG</h2>
-                        <p style={{ color: '#94a3b8', fontSize: '1.1rem', margin: 0 }}>KHOA CƠ SỞ - BỘ MÔN ĐIỆN TỬ SỐ</p>
-                      </div>
-                    </div>
-                  </div>
-                )}
               </>
             )}
           </div>
