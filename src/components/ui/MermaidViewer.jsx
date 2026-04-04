@@ -35,7 +35,10 @@ export default function MermaidViewer({ chart }) {
         background: '#f9fafb',
         padding: '20px',
         borderRadius: '8px',
-        border: '1px solid #e5e7eb'
+        border: '1px solid #e5e7eb',
+        overflowX: 'auto',
+        width: '100%',
+        boxSizing: 'border-box',
       }}
     />
   );

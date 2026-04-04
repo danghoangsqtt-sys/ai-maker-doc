@@ -62,13 +62,12 @@ Chúng ta **không** yêu cầu chuyên viên, giảng viên học cách AI tín
 ### SƠ ĐỒ 1: TỔNG THỂ HỆ THỐNG AI TRONG NHÀ TRƯỜNG CƠ SỞ GIÁO DỤC
 
 ```mermaid
-flowchart LR
-    A["🎯 NHU CẦU THỰC TẾ\n(Giảng dạy / Học tập / Quản lý)"]
-    --> B["🤖 CÔNG CỤ AI\n(ChatGPT / Gemini / Claude)"]
-    B --> C["🔧 SẢN PHẨM\n(WebApp / Tool / Chatbot)"]
-    C --> D["👤 NGƯỜI DÙNG\n(GV / HV / Chuyên viên)"]
-    D --> E["📈 HIỆU QUẢ\n(Nhanh / Chuẩn / Tiết kiệm)"]
-    E -.->|Phản hồi cải tiến| A
+flowchart TD
+    A["🎯 Nhu cầu thực tế"] --> B["🤖 Công cụ AI xử lý"]
+    B --> C["🔧 Sản phẩm\n(WebApp / Chatbot)"]
+    C --> D["👤 Người dùng\n(GV / HV / Chuyên viên)"]
+    D --> E["📈 Hiệu quả\n(Nhanh / Chuẩn / Tiết kiệm)"]
+    E -.->|"Phản hồi cải tiến"| A
 ```
 
 > **Mô tả sơ đồ:** Hệ thống AI trong nhà trường cơ sở giáo dục vận hành theo vòng khép kín: Từ nhu cầu thực tế → AI xử lý → Tạo sản phẩm → Người dùng sử dụng → Đánh giá hiệu quả → Phản hồi để cải tiến. Vòng lặp này đảm bảo sản phẩm AI luôn sát nhiệm vụ thực tế.
